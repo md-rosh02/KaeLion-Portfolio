@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+html, body{
+    background: black;
+    margin: 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+body, a, button {
+  cursor: none !important;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image: url('./assets/image.png');
+  background-repeat: no-repeat;
+  background-size: 70vw;
+    background-position-y: 50%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  filter: brightness(0.175);
+
+  z-index: 0;   /* 🔴 VERY IMPORTANT */
+}
+
+
+@font-face {
+  font-family: 'Asy';
+  src: url('./assets/fonts/AsylumMansion-lqJZ.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'tox';
+  src: url('./assets/fonts/Toxia-OwOA.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ym';
+  src: url('./assets/fonts/Youmurdererbb-pwoK.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sb';
+  src: url('./assets/fonts/SukajanBrushDemoRegular-q2Mmx.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hp';
+  src: url('./assets/fonts/HarutoPersonalUse-gwM5R.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nar';
+  src: url('./assets/fonts/NinjaNaruto-YOn4.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* FORCE SCROLLBAR STYLE */
+@layer base {
+  ::-webkit-scrollbar {
+    width: 4px !important; /* Extremely thin for minimalism */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #080808 !important; /* Matches your section bg */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #222 !important; /* Dark grey by default */
+    border-radius: 0px !important;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff0000 !important; /* Red on hover */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5) !important;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera (Optional: if you want a custom floating one) */
+/* .no-scrollbar::-webkit-scrollbar { display: none; } */
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.website-title {
+  font-family: 'Asy', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
