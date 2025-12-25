@@ -37,42 +37,42 @@ body::before {
 
 @font-face {
   font-family: 'Asy';
-  src: url('./assets/fonts/AsylumMansion-lqJZ.ttf') format('truetype');
+  src: url('../public/Fonts/AsylumMansion-lqJZ.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'tox';
-  src: url('./assets/fonts/Toxia-OwOA.ttf') format('truetype');
+  src: url('../public/Fonts/Toxia-OwOA.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ym';
-  src: url('./assets/fonts/Youmurdererbb-pwoK.otf') format('opentype');
+  src: url('../public/Fonts/Youmurdererbb-pwoK.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Sb';
-  src: url('./assets/fonts/SukajanBrushDemoRegular-q2Mmx.otf') format('opentype');
+  src: url('../public/Fonts/SukajanBrushDemoRegular-q2Mmx.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Hp';
-  src: url('./assets/fonts/HarutoPersonalUse-gwM5R.ttf') format('truetype');
+  src: url('../public/Fonts/HarutoPersonalUse-gwM5R.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Nar';
-  src: url('./assets/fonts/NinjaNaruto-YOn4.ttf') format('truetype');
+  src: url('../public/Fonts/NinjaNaruto-YOn4.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
